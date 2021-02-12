@@ -10,11 +10,9 @@ const Nav = styled.nav`
   display: flex;
   padding: 1rem 2rem;
   justify-content: space-between;
-  background: red;
   z-index: 100;
   position: fixed;
   width: 100%;
-  background: red;
 `;
 
 const Logo = styled(Link)`
