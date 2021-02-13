@@ -1,9 +1,9 @@
 # Preview
-![image info](./src/images/screen.PNG)
+![image info](./src/images/screen.png)
 
 
 ## ⚡️ Live
-  [Check it live]('https://real-estatee.netlify.app/')
+[Check it live](https://real-estatee.netlify.app)
 
 # Features
  - [x] Create Navbar
@@ -13,8 +13,9 @@
  - [x] Build the Dropdown Menu for mobile 
  - [x] Build the Info Section with Images
  - [x] Build Footer
- - [] Create About and Rental Pages
- - [] Add some Animations 
+ - [ ] Create About and Rental Pages
+ - [ ] Add some Animations 
+ - [x] Deploy 
 
 ## ✨ Quick start
 
