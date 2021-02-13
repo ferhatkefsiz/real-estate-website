@@ -13,6 +13,10 @@ const Nav = styled.nav`
   z-index: 100;
   position: fixed;
   width: 100%;
+  
+  @media screen and (max-width: 768px) {
+    background-color: #cd853f;
+  }
 `;
 
 const Logo = styled(Link)`
@@ -20,7 +24,11 @@ const Logo = styled(Link)`
   color: #fff;
   align-items: center;
   font-style: italic;
+  font-weight: bold;
   text-decoration: none;
+  &:hover{
+    color: #cd853f;
+  }
 `;
 
 const NavLink = css`
@@ -30,6 +38,10 @@ const NavLink = css`
   align-items: center;
   padding: 0 1rem;
   height: 100%;
+  font-weight: 500;
+  &:hover{
+    color: #cd853f;
+  }
 `;
 
 const MenuBars = styled(FaBars)`

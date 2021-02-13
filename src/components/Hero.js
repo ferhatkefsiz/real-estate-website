@@ -26,6 +26,7 @@ const HeroSlide = styled.div`
   width: 100%;
   height: 100%;
 `;
+
 const HeroSlider = styled.div`
   position: absolute;
   top: 0;
@@ -33,7 +34,7 @@ const HeroSlider = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  justif-content: center;
+  justif-content: center;    
 
   &::before {
     content: "";
@@ -70,7 +71,7 @@ const HeroContent = styled.div`
   max-width: 1600px;
   width: calc(100% -100px);
   color: #fff;
-  margin-left: 40px;
+  margin-left: 60px;
 
   h1 {
       font-size: clamp(1rem,8vw,2rem);
@@ -84,6 +85,10 @@ const HeroContent = styled.div`
   p {
       margin-bottom: 1.2rem;
       text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+  }
+
+  @media screen and (max-width:800px){
+    margin-left: 10px;
   }
 
 `;
