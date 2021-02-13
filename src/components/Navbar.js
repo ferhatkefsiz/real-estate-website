@@ -68,11 +68,11 @@ const NavMenuLinks = styled(Link)`
   text-decoration: none;
 `;
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <Nav>
       <Logo to="/">ELIXR</Logo>
-      <MenuBars />
+      <MenuBars onClick={toggle} />
       <NavMenu>
         {menuData.map((item, index) => (
           <NavMenuLinks to={item.link} key={index}>
