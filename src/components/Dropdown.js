@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 import { menuData } from '../data/MenuData';
 import { Button } from './Button';
+import { IconContext } from "react-icons";
+
 
 const DropdownContainer = styled.div`
   position: fixed;
@@ -15,8 +17,8 @@ const DropdownContainer = styled.div`
   align-items:center;
   left:0;
   transition: 0.3s ease-in-out;
-  opacity: ${({isOpen}) => (isOpen ? '1' : '0')};
-  top: ${({isOpen}) => (isOpen ? '0' : '-100%')};
+  opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
+  top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `;
 
 const Icon = styled.div`
@@ -66,11 +68,14 @@ const BtnWrap = styled.div`
   display: flex;
   justify-content: center;`;
 
-const Dropdown = ({isOpen, toggle}) => {
+const Dropdown = ({ isOpen, toggle }) => {
   return (
+
     <DropdownContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
-        <CloseIcon />
+        <IconContext.Provider value={{ color: "white", className: "global-class-name" }}>
+          <CloseIcon />
+        </IconContext.Provider>
       </Icon>
       <DropdownWrapper>
         <DropdownMenu>
@@ -87,6 +92,7 @@ const Dropdown = ({isOpen, toggle}) => {
         </BtnWrap>
       </DropdownWrapper>
     </DropdownContainer>
+
   )
 }
 

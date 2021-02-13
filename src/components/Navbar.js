@@ -13,10 +13,7 @@ const Nav = styled.nav`
   z-index: 100;
   position: fixed;
   width: 100%;
-  
-  @media screen and (max-width: 768px) {
-    background-color: #cd853f;
-  }
+  background-color: #000d1a;
 `;
 
 const Logo = styled(Link)`
@@ -49,6 +46,7 @@ const MenuBars = styled(FaBars)`
   height: 30px;
   width: 30px;
   cursor: pointer;
+  color: white;
   
   @media screen and (max-width: 768px) {
     display: block;
@@ -92,7 +90,7 @@ const Navbar = ({ toggle }) => {
           </NavMenuLinks>
         ))}
       </NavMenu>
-      <NavBtn>
+      <NavBtn>  
         <Button to="/contact" primary="true">
           {" "}
           Contact us{" "}
